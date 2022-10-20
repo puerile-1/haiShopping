@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/tx"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/tx"
+            />
+
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tx"
+            android:layout_toRightOf="@+id/tx"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ronin" />
+
+            <TextView
+                android:id="@+id/user_said"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:layout_marginTop="10dp"
+                android:text="在这里添加个性签名" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_said"
+                android:layout_marginTop="10dp"
+                android:text="关注 5  |  粉丝 10 " />
+        </RelativeLayout>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/user"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/set"/>
+        <RelativeLayout
+            android:id="@+id/select1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tx"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/shouc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/shouc_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/shouc" />
+
+                <TextView
+                    android:id="@+id/shouc_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/shouc_btn"
+                    android:gravity="center"
+                    android:text="收藏" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dingy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/shouc">
+
+                <Button
+                    android:id="@+id/dingy_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/dingy" />
+
+                <TextView
+                    android:id="@+id/dingy_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/dingy_btn"
+                    android:gravity="center"
+                    android:text="订阅" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zuj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/dingy">
+
+                <Button
+                    android:id="@+id/zuj_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/zuj" />
+
+                <TextView
+                    android:id="@+id/zuj_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/zuj_btn"
+                    android:gravity="center"
+                    android:text="足迹" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/zuj">
+
+                <Button
+                    android:id="@+id/lingq_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/lingq" />
+
+                <TextView
+                    android:id="@+id/lingq_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/lingq_btn"
+                    android:gravity="center"
+                    android:text="零钱" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dd"
+            android:layout_width="400dp"
+            android:layout_height="220dp"
+            android:layout_below="@id/select1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gwc_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="我的订单" />
+
+            <Button
+                android:id="@+id/see_dd"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:text="全部 > " />
+
+            <RelativeLayout
+                android:id="@+id/ddxq"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_below="@id/see_dd"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/fuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/fuk_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/fuk" />
+
+                    <TextView
+                        android:id="@+id/fuk_text"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/fuk_btn"
+                        android:gravity="center"
+                        android:text="付款" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/fah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fuk">
+
+                    <Button
+                        android:id="@+id/fah_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/fah" />
+
+                    <TextView
+                        android:id="@+id/fah_text"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/fah_btn"
+                        android:gravity="center"
+                        android:text="待发货" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/shouh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fah">
+
+                    <Button
+                        android:id="@+id/shouh_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/shouh" />
+
+                    <TextView
+                        android:id="@+id/shouh_text"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/shouh_btn"
+                        android:gravity="center"
+                        android:text="待收货" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pingj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/shouh">
+
+                    <Button
+                        android:id="@+id/pingj_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/pingj" />
+
+                    <TextView
+                        android:id="@+id/pingj_text"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/pingj_btn"
+                        android:gravity="center"
+                        android:text="待评价" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tuik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/pingj">
+
+                    <Button
+                        android:id="@+id/tuik_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/tuik" />
+
+                    <TextView
+                        android:id="@+id/tuik_text"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/tuik_btn"
+                        android:gravity="center"
+                        android:text="待评价" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/ddxq"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/gwc_bg">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/syt3"/>
+
+                <TextView
+                    android:id="@+id/qianshou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/img"
+                    android:text="已签收" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14:00"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qianshou"
+                    android:layout_toRightOf="@id/img"
+                    android:layout_marginLeft="10dp"
+                    android:text="【丽水市】您的快递签收，签收人..."/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/select2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dd"
+            android:background="@drawable/gwc_bg"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/s12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/s12_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/huic" />
+
+                <TextView
+                    android:id="@+id/s12_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/s12_btn"
+                    android:gravity="center"
+                    android:text="双12会场" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/qiand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/s12">
+
+                <Button
+                    android:id="@+id/qiand_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/qiand" />
+
+                <TextView
+                    android:id="@+id/qiand_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/qiand_btn"
+                    android:gravity="center"
+                    android:text="签到有礼" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/renq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/qiand">
+
+                <Button
+                    android:id="@+id/renq_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/renq" />
+
+                <TextView
+                    android:id="@+id/renq_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/renq_btn"
+                    android:gravity="center"
+                    android:text="人气疯抢" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mes12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/renq">
+
+                <Button
+                    android:id="@+id/mes12_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/med" />
+
+                <TextView
+                    android:id="@+id/mes12_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/mes12_btn"
+                    android:gravity="center"
+                    android:text="我的双12" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/select3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select2"
+            android:background="@drawable/gwc_bg"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:id="@+id/nongc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/nongc_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/nongc" />
+
+                <TextView
+                    android:id="@+id/nongc_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/nongc_btn"
+                    android:gravity="center"
+                    android:text="巴巴农场" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/taojb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/nongc">
+
+                <Button
+                    android:id="@+id/taojb_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/taojb" />
+
+                <TextView
+                    android:id="@+id/taojb_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/taojb_btn"
+                    android:gravity="center"
+                    android:text="淘金币" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/taojb">
+
+                <Button
+                    android:id="@+id/linq_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/linqu" />
+
+                <TextView
+                    android:id="@+id/linq_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/linq_btn"
+                    android:gravity="center"
+                    android:text="领券中心" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mepj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@id/linq">
+
+                <Button
+                    android:id="@+id/mepj_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/mepj" />
+
+                <TextView
+                    android:id="@+id/mepj_text"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/mepj_btn"
+                    android:gravity="center"
+                    android:text="我的评价" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

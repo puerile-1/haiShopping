@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/gwc"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gwc_bg">
+
+
+        <ImageView
+            android:id="@+id/tm"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/tm" />
+
+        <TextView
+            android:id="@+id/gwc_dpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@id/tm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:text="交易成功"
+            android:textColor="@color/red" />
+
+        <RelativeLayout
+            android:id="@+id/mj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tm">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:text=" 跨店满减 "
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/t1"
+                android:gravity="center"
+                android:text=" 12.12 0点开抢，每满200减20 "
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="凑单 >  "
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mj"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+
+            <ImageView
+                android:id="@+id/gwc_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="12dp" />
+
+            <TextView
+                android:id="@+id/shuang12"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/gwc_img"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="双12"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/gwc_spname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/shuang12"
+                android:gravity="center"
+                android:text="双12" />
+
+            <TextView
+                android:id="@+id/scope"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/shuang12"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/gwc_img"
+                android:gravity="center"
+                android:text="颜色:WM1020-牛仔蓝；尺码L" />
+
+
+            <TextView
+                android:id="@+id/gwc_num"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/gwc_spname"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/gwc_spname"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/gwc_num"
+                android:gravity="center"
+                android:text="×"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/gwc_mj"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/scope"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/gwc_img"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:text=" 满200减20 "
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/yunf"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/com"
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费险"
+                android:textColor="@color/black"
+                android:layout_marginLeft="80dp"
+                />
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text1"
+                android:layout_marginLeft="50dp"
+                android:text="退换货可自动理赔"
+            />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/text2"
+                android:text="已出单"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/com_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="88.88"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_toLeftOf="@+id/com_price"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:text="实付款: ￥ "
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/yunf"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="更多" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/more"
+                android:background="@drawable/gwc_bg"
+                android:text="加入购物车" />
+
+            <Button
+                android:id="@+id/add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/add"
+                android:background="@drawable/gwc_bg"
+                android:text="查看物流" />
+
+            <Button
+                android:id="@+id/add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/add1"
+                android:background="@drawable/gwc_bg"
+                android:text="确认收货" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

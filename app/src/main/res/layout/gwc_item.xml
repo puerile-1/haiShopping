@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/gwc"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/gwc_bg">
+
+        <CheckBox
+            android:id="@+id/select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true" />
+        <ImageView
+            android:id="@+id/tm"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/tm"
+            android:layout_toRightOf="@+id/select_btn"
+            android:layout_margin="12dp"
+            />
+
+        <TextView
+            android:id="@+id/gwc_dpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_toRightOf="@id/tm" />
+        <RelativeLayout
+            android:id="@+id/mj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tm"
+            android:layout_toRightOf="@id/select_btn">
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:text=" 跨店满减 "
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/t1"
+                android:text=" 12.12 0点开抢，每满200减20 "
+                android:layout_marginLeft="12dp"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="凑单 >  "
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mj"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/select_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <ImageView
+                android:id="@+id/gwc_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/select_btn2" />
+
+            <TextView
+                android:id="@+id/shuang12"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/gwc_img"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="双12"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/gwc_spname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/shuang12"
+                android:gravity="center"
+                android:text="双12" />
+
+            <Spinner
+                android:id="@+id/scope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shuang12"
+                android:layout_toRightOf="@id/gwc_img"
+                android:entries="@array/data"
+                android:spinnerMode="dialog"
+                android:theme="@style/life_spinner_style" />
+
+            <TextView
+                android:id="@+id/gwc_mj"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/scope"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/gwc_img"
+                android:background="@drawable/edit_bg"
+                android:gravity="center"
+                android:text=" 满200减20 "
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gwc_mj"
+                android:layout_toRightOf="@id/gwc_img"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="18dp"
+                android:text=" ￥ "
+                android:textColor="@color/red"
+                />
+
+            <TextView
+                android:id="@+id/gwc_price"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@id/gwc_mj"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@id/price_mark"
+
+                android:gravity="center"
+                android:text="88.88 "
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/gwc_num"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/gwc_mj"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gwc_bg"
+                android:gravity="center"
+                android:text=" * 1 "
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
